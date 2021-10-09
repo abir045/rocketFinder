@@ -1,0 +1,17 @@
+.rocket-list {
+  margin: 20px 10pxpx;
+}
+
+.rocket-list h2 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.rocket-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 15px;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: flex-start; */
+}
