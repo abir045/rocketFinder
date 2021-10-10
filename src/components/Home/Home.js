@@ -1,7 +1,6 @@
 import React from "react";
 import RocketListing from "../RocketListing/RocketListing";
 import { useEffect } from "react";
-import { useState } from "react";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { addRockets } from "../../features/rockets/rocketSlice";
