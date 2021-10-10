@@ -18,7 +18,7 @@ const RocketListing = (props) => {
         setOutput((output) => [...output, val]);
       }
     });
-  }, [searchTitle]);
+  }, [searchTitle, rockets]);
 
   return (
     <div className="rocket-wrapper">
