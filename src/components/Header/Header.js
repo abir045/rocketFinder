@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import rocket from "../../images/rocket.svg";
 import "./Header.css";
 
@@ -12,7 +11,7 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <img style={{ width: "100px" }} src={rocket} alt="user" />
           Rocket Finder
         </a>
