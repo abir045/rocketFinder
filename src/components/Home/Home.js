@@ -1,6 +1,7 @@
 import React from "react";
 import RocketListing from "../RocketListing/RocketListing";
 import { useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { addRockets } from "../../features/rockets/rocketSlice";
@@ -16,8 +17,7 @@ const Home = () => {
         .catch((err) => {
           console.log("Err:", err);
         });
-      // console.log(response.data[0].mission_name);
-      // console.log(response);
+      // console.log(response.data);
       dispatch(addRockets(response.data));
     };
     fetchRockets();
